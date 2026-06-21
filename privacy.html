@@ -58,7 +58,7 @@
 
   <div class="content">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: December 5, 2025</p>
+    <p class="updated">Last updated: June 21, 2026</p>
 
     <p>Hoopko ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
 
@@ -71,6 +71,8 @@
       <li><strong>Device data:</strong> FCM token for push notifications, crash reports</li>
       <li><strong>Microphone audio:</strong> processed locally on-device for voice score tracking (not recorded or stored)</li>
       <li><strong>Camera & video:</strong> only when you actively use Voice + Video (Highlights) mode — saved only on your device</li>
+      <li><strong>Direct messages:</strong> text messages sent between mutual friends, stored on our servers so the recipient can read them</li>
+      <li><strong>Abuse reports:</strong> if you report another user, we store the report (reporter id, target id, conversation id, reason) for review</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -97,22 +99,29 @@
     <h2>5. People Visible in Your Recordings</h2>
     <p>If you record a game, other players on the court will appear in your video. <strong>You are responsible</strong> for asking for their consent before sharing the footage publicly, especially in regions covered by GDPR or similar privacy laws. Hoopko does not share these videos automatically.</p>
 
-    <h2>6. Children's Privacy (COPPA)</h2>
-    <p>Hoopko requires users to be at least 13 years old. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will delete it immediately. Users between 13 and 15 in the EU should have parental consent before registering, in accordance with GDPR.</p>
+    <h2>6. Direct Messages</h2>
+    <p>Hoopko allows one-to-one text messages (DMs) <strong>only between users who are mutual friends</strong>. Random users cannot message you.</p>
+    <p>DMs are <strong>not end-to-end encrypted</strong>. Messages are stored on Firebase Firestore so the recipient can read them when they open the conversation. We do not proactively scan DM content, but we reserve the right to review specific messages when an abuse report is filed.</p>
+    <p>You can <strong>block</strong> any user from their profile or chat screen — blocked users cannot message you and you stop receiving notifications from them. You can <strong>report</strong> a user for harassment, hate speech, sexual content involving minors, spam, or threats; reports are reviewed manually within 48 hours.</p>
+    <p>Do not send sensitive personal information, payment details, government IDs, passwords, or anything you would not want our moderation team to see in the event of a report.</p>
+    <p>When you delete your account, all DMs you have sent are removed from our servers.</p>
 
-    <h2>7. Voice Data</h2>
+    <h2>7. Children's Privacy (Age 16+)</h2>
+    <p>Hoopko requires users to be at least 16 years old. This is in line with the General Data Protection Regulation (GDPR) Article 8, which sets the minimum age for digital consent in most EU member states at 16. We do not knowingly collect personal information from anyone under 16. If we become aware that an account belongs to a person under 16, the account and all associated data (including DMs, friends, games, and profile) will be deleted immediately.</p>
+
+    <h2>8. Voice Data</h2>
     <p>Voice score tracking uses offline speech recognition (Vosk) processed entirely on your device. Audio is never transmitted to our servers or stored anywhere.</p>
 
-    <h2>8. Location Data</h2>
+    <h2>9. Location Data</h2>
     <p>Location is used only to show nearby games and is not stored on our servers beyond what is necessary for game creation. You can disable location access in your device settings at any time.</p>
 
-    <h2>9. Data Retention</h2>
-    <p>Your account data is retained as long as your account is active. You may delete your account at any time from <em>Profile → Delete Account</em>, which permanently removes your personal data and cascades to delete games you created and removes you from games you joined. Inactive games are auto-deleted after 2 hours.</p>
+    <h2>10. Data Retention</h2>
+    <p>Your account data is retained as long as your account is active. You may delete your account at any time from <em>Profile → Delete Account</em>, which permanently removes your personal data and cascades to delete games you created, removes you from games you joined, and deletes all DMs you have sent. Inactive games are auto-deleted after 2 hours.</p>
 
-    <h2>10. Security</h2>
-    <p>We use Firebase Security Rules, App Check, email verification, and industry-standard encryption to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+    <h2>11. Security</h2>
+    <p>We use Firebase Security Rules, Firebase App Check (Play Integrity), email verification, and industry-standard encryption (TLS in transit, Firebase server-side encryption at rest) to protect your data. However, no method of transmission over the internet is 100% secure. If you discover a security vulnerability, please report it to <a href="mailto:matijatometic@gmail.com">matijatometic@gmail.com</a>.</p>
 
-    <h2>11. Your Rights (GDPR &amp; COPPA)</h2>
+    <h2>12. Your Rights (GDPR)</h2>
     <ul>
       <li><strong>Right to access</strong> — request all data we hold about you.</li>
       <li><strong>Right to deletion</strong> — delete your account and all associated data at any time via Profile → Delete Account.</li>
@@ -120,16 +129,18 @@
       <li><strong>Right to object</strong> — withdraw consent at any time by deleting your account.</li>
     </ul>
 
-    <h2>12. Changes to This Policy</h2>
+    <h2>13. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Material changes trigger a re-acceptance prompt the next time you open the app.</p>
 
-    <h2>13. Contact</h2>
+    <h2>14. Contact</h2>
     <p>If you have any questions about this Privacy Policy, contact us at:<br>
     <a href="mailto:matijatometic@gmail.com">matijatometic@gmail.com</a></p>
   </div>
 
   <footer>
-    <span>© 2025 Hoopko</span>
+    <span>© 2026 Hoopko</span>
+    <span class="sep">·</span>
+    <a href="terms.html">Terms</a>
     <span class="sep">·</span>
     <a href="index.html">Home</a>
     <span class="sep">·</span>
